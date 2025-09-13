@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inline Chat Widget Demo</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 40px 20px;
+      background-color: #f8fafc;
+      color: #334155;
+    }
+    
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    
+    .content-section {
+      background: white;
+      padding: 40px;
+      margin-bottom: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    }
+    
+    h1 {
+      color: #1e293b;
+      margin-bottom: 20px;
+    }
+    
+    h2 {
+      color: #334155;
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+    
+    pre {
+      background: #1e293b;
+      color: #e2e8f0;
+      padding: 20px;
+      border-radius: 8px;
+      overflow-x: auto;
+      font-size: 14px;
+    }
+    
+    .highlight {
+      background: #fef3c7;
+      padding: 15px;
+      border-radius: 8px;
+      border-left: 4px solid #f59e0b;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="content-section">
+      <h1>🚀 Inline Chat Widget Demo</h1>
+      
+      <p>This page demonstrates how to embed the chat widget directly into your webpage content. The widget below is fully functional and integrates seamlessly with your page layout.</p>
+
+      <div class="highlight">
+        <strong>💡 How to use:</strong> Simply add one script tag to your HTML where you want the chat widget to appear!
+      </div>
+
+      <h2>📋 Basic Usage</h2>
+      <p>Add this script tag anywhere in your HTML:</p>
+      
+      <pre><code>&lt;script 
+  src="https://openai-assistants-api-production.up.railway.app/inline-embed.js"
+  data-height="500px"
+  data-title="🤖 My Assistant"
+&gt;&lt;/script&gt;</code></pre>
+
+      <h2>🎯 Live Demo</h2>
+      <p>Here's the widget in action:</p>
+    </div>
+
+    <!-- ACTUAL INLINE EMBED -->
+    <script 
+      src="/inline-embed.js"
+      data-height="400px"
+      data-title="🤖 Demo AI Assistant"
+    ></script>
+
+    <div class="content-section">
+      <h2>✅ Features</h2>
+      <ul>
+        <li><strong>No Popups:</strong> Integrates naturally into page flow</li>
+        <li><strong>Responsive:</strong> Works on all screen sizes</li>
+        <li><strong>Customizable:</strong> Control height, title, and more</li>
+        <li><strong>Easy Integration:</strong> Just one script tag</li>
+        <li><strong>Persistent Sessions:</strong> Conversations are remembered</li>
+      </ul>
+
+      <h2>🔗 Usage Examples</h2>
+      
+      <h3>With Custom Target</h3>
+      <pre><code>&lt;div id="my-chat"&gt;&lt;/div&gt;
+&lt;script 
+  src="https://openai-assistants-api-production.up.railway.app/inline-embed.js"
+  data-target="#my-chat"
+  data-height="600px"
+  data-title="📞 Customer Support"
+&gt;&lt;/script&gt;</code></pre>
+
+      <h3>Auto-placement (simplest)</h3>
+      <pre><code>&lt;h2&gt;Need Help?&lt;/h2&gt;
+&lt;script src="https://openai-assistants-api-production.up.railway.app/inline-embed.js"&gt;&lt;/script&gt;
+&lt;!-- Widget appears here automatically --&gt;</code></pre>
+
+      <h2>🎨 Customization Options</h2>
+      <ul>
+        <li><code>data-height</code>: Set widget height (e.g., "400px", "50vh")</li>
+        <li><code>data-title</code>: Customize header title</li>
+        <li><code>data-target</code>: Specify where to place widget</li>
+        <li><code>data-api-url</code>: Use different API endpoint</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
