@@ -2,7 +2,7 @@
   // 1. Inject CSS
   const link = document.createElement('link');
   link.rel = 'stylesheet';
-  link.href = 'https://openai-assistants-api-production.up.railway.app/style.css';
+  link.href = 'https://openai-assistants-api-hq-production.up.railway.app/style.css';
   document.head.appendChild(link);
 
   // 2. Inject HTML (no toggle button anymore)
@@ -33,7 +33,7 @@
 
   // 4. Inject app.js
   const script = document.createElement('script');
-  script.src = 'https://openai-assistants-api-production.up.railway.app/app.js';
+  script.src = 'https://openai-assistants-api-hq-production.up.railway.app/app.js';
   script.defer = true;
   document.body.appendChild(script);
 })();
