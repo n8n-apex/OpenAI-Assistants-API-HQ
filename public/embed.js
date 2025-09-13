@@ -128,7 +128,7 @@
     })();
 
   // Host where the iframe lives (your app)
-  var APP = "https://openai-assistants-api-production.up.railway.app";
+  var APP = "https://openai-assistants-api-hq-production.up.railway.app";
 
   // Attributes
   var PROJECT_ID = s.getAttribute("data-project") || "default";
