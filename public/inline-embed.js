@@ -4,7 +4,7 @@
   window.__INLINE_CHAT_LOADED__ = true;
 
   const script = document.currentScript || document.querySelector('script[src*="inline-embed.js"]');
-  const API_URL = 'https://openai-assistants-api-production.up.railway.app/chat';
+  const API_URL = 'https://openai-assistants-api-hq-production.up.railway.app/chat';
   const TARGET = script.getAttribute('data-target');
   const HEIGHT = script.getAttribute('data-height') || '600px';
   const TITLE = script.getAttribute('data-title') || 'Bildungsfabrik Learning Buddy';
